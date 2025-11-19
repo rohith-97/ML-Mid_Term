@@ -30,38 +30,6 @@ python predict_test.py
 
 Or use curl with a JSON body (example below).
 
-## API — example
-
-Endpoint: POST http://localhost:9696/predict
-
-Sample input JSON (keys must match training features):
-
-```json
-{
-	"Age": 46,
-	"Sex": "M",
-	"ChestPainType": "ATA",
-	"RestingBP": 167,
-	"Cholesterol": 163,
-	"FastingBS": 0,
-	"RestingECG": "ST",
-	"MaxHR": 103,
-	"ExerciseAngina": "N",
-	"Oldpeak": 1.5,
-	"ST_Slope": "Down"
-}
-```
-
-Sample response:
-
-```json
-{
-	"heart_disease_probability": 0.723,
-	"heart_disease": true
-}
-```
-
-Note: predicted fields are a float probability and a boolean decision using a 0.5 threshold.
 
 ## Installation (local, non-Docker)
 
